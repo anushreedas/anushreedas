@@ -56,8 +56,8 @@ BS Information Technology University of Mumbai              2017
 
 I write about what I'm actually building — production ML systems, data pipelines, and why the fundamentals matter before chasing the hype.
 
-- [Before You Train Anything, Analyze This: EDA for Image Datasets](https://medium.com/@anushreedas.2710/image-dataset-analysis-using-python-libraries-pandas-and-matplotlib-a640e5f59805)
-- [Finding Structure in Unstructured Data with VGG16 + KMeans](https://medium.com/@anushreedas.2710/finding-structure-in-unstructured-image-dataset-an-initial-analysis-of-unlabelled-data-0cf2f6231735)
+- [Stop Guessing About Your Image Dataset: A Practical EDA Guide with Pandas and Matplotlib](https://medium.com/@anushreedas.2710/image-dataset-analysis-using-python-libraries-pandas-and-matplotlib-a640e5f59805)
+- [Finding Structure in Unstructured Image Dataset with VGG16 + KMeans](https://medium.com/@anushreedas.2710/finding-structure-in-unstructured-image-dataset-an-initial-analysis-of-unlabelled-data-0cf2f6231735)
 
 ---
 
