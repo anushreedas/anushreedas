@@ -23,7 +23,6 @@ Currently at **Arkatechture** building financial data infrastructure, and pursui
 | [BERT Confusion Emotion Detection](https://github.com/anushreedas/BERT_LLM_Detect_Confusion_Emotion) | Fine-tuned BERT on time-series transcribed speech to detect multi-level human confusion with statistical significance testing across model variants | PyTorch, HuggingFace, BERT |
 | [Handwritten Math Expression Recognizer](https://github.com/anushreedas/Handwritten_Math_Expression_Recognition) | Multi-stage pipeline for stroke segmentation, symbol classification, and Symbol Layout Tree generation outputting LaTeX and MathML | SVM, Random Forest, Python |
 | [CNN Dishwasher-Safe Classifier](https://github.com/anushreedas/CNN_Dishwasher-safe_or_Not) | End-to-end image classification with transfer learning, class imbalance handling, and per-class evaluation | PyTorch, ResNet, VGG16 |
-| [Image Dataset EDA + Clustering](https://github.com/anushreedas) | VGG16 feature extraction → PCA → KMeans to find structure in unlabelled kitchenware images before annotation | Keras, sklearn, Python |
 
 ---
 
@@ -37,8 +36,6 @@ ML & AI          scikit-learn · PyTorch · TensorFlow · BERT/Transformers
 Data Engineering ETL/ELT pipelines · Snowflake · AWS (S3, Lambda, Glue)
                  PySpark · SQL · data quality monitoring · schema management
 
-MLOps            experiment tracking · model lifecycle · Docker · CI/CD
-                 MLFlow · Airflow · production monitoring
 ```
 
 ---
