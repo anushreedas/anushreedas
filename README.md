@@ -12,7 +12,7 @@ Currently at **Arkatechture** building financial data infrastructure, and pursui
 
 - 📄 &nbsp; ML research under review at **ACM PODS** — automated SQL data type inference for enterprise data pipelines
 - 🔍 &nbsp; Anomaly detection and time-series forecasting for data ingestion workflows
-- ✍️ &nbsp; Writing about production ML and the fundamentals that actually matter → [medium.com/@anushreedas.2710](https://medium.com/@anushreedas.2710)
+- ✍️ &nbsp; Writing about production ML and the fundamentals that actually matter → [https://medium.com/@anushree-das](https://medium.com/@anushree-das)
 
 ---
 
@@ -56,13 +56,13 @@ BS Information Technology University of Mumbai              2017
 
 I write about what I'm actually building — production ML systems, data pipelines, and why the fundamentals matter before chasing the hype.
 
-- [Stop Guessing About Your Image Dataset: A Practical EDA Guide with Pandas and Matplotlib](https://medium.com/@anushreedas.2710/image-dataset-analysis-using-python-libraries-pandas-and-matplotlib-a640e5f59805)
-- [Finding Structure in Unstructured Image Dataset with VGG16 + KMeans](https://medium.com/@anushreedas.2710/finding-structure-in-unstructured-image-dataset-an-initial-analysis-of-unlabelled-data-0cf2f6231735)
+- [Stop Guessing About Your Image Dataset: A Practical EDA Guide with Pandas and Matplotlib](https://medium.com/@anushree-das/image-dataset-analysis-using-python-libraries-pandas-and-matplotlib-a640e5f59805)
+- [Finding Structure in Unstructured Image Dataset with VGG16 + KMeans](https://medium.com/@anushree-das/finding-structure-in-unstructured-image-dataset-an-initial-analysis-of-unlabelled-data-0cf2f6231735)
 
 ---
 
 ## Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-anushree--s--das-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/anushree-s-das)
-[![Medium](https://img.shields.io/badge/Medium-@anushreedas.2710-000000?style=flat&logo=medium&logoColor=white)](https://medium.com/@anushreedas.2710)
+[![Medium](https://img.shields.io/badge/Medium-@anushreedas.2710-000000?style=flat&logo=medium&logoColor=white)](https://medium.com/@anushree-das)
 [![Email](https://img.shields.io/badge/Email-anushreedas.2710@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:anushreedas.2710@gmail.com)
