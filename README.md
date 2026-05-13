@@ -21,6 +21,7 @@ Currently at **Arkatechture** building financial data infrastructure, and pursui
 | Project | What it does | Stack |
 |---|---|---|
 | [BERT Confusion Emotion Detection](https://github.com/anushreedas/BERT_LLM_Detect_Confusion_Emotion) | Fine-tuned BERT on time-series transcribed speech to detect multi-level human confusion across 12 model configurations, with sign test statistical significance validation | PyTorch, HuggingFace, BERT, TOD-BERT |
+| [Credit Card Transactions Data Warehouse](https://github.com/anushreedas/credit-card-transactions-datapipeline) | An ETL pipeline and dimensional data warehouse for credit card transaction analysis, built in R. This project transforms raw credit card data into a star schema optimized for fraud detection, customer behavior analysis, and business intelligence reporting | R, ETL, Schema Design |
 | [Dishwasher-Safe Image Classifier](https://github.com/anushreedas/dishwasher-safe-image-classifier) | Compared five CNN architectures on a custom 1,237-image dataset with class imbalance handling, frozen backbones, and per-class evaluation — best model (VGG16-BN) achieved 80% test accuracy, MCC 0.579 | PyTorch, ResNet, VGG16, AlexNet |
 | [Handwritten Math Expression Recognizer](https://github.com/anushreedas/Handwritten_Math_Expression_Recognition) | Multi-stage pipeline for stroke segmentation, symbol classification, and Symbol Layout Tree generation outputting LaTeX and MathML | SVM, Random Forest, Python |
 | [Content-Based Image Retrieval](https://github.com/anushreedas/Content_Based_Retrieval_System_Dog_Images) | Compared four feature extractors — color histogram, Gabor filter, HOG, and ResNet50 — for image similarity search across 133 dog breeds | PyTorch, OpenCV, scikit-learn |
@@ -60,11 +61,12 @@ BS Information Technology University of Mumbai                2017
 
 ## Writing
 
-I write about what I'm actually building — production ML systems, data pipelines, and why the fundamentals matter before chasing the hype.
+I write about what I'm actually building such as production ML systems, data pipelines, and why the fundamentals matter before chasing the hype.
 
 - [Before You Train Anything, Analyze This: EDA for Image Datasets with Pandas and Matplotlib](https://anushree-das.medium.com/image-dataset-analysis-using-python-libraries-pandas-and-matplotlib-a640e5f59805)
 - [Finding Structure in Unstructured Data: VGG16 + KMeans on Unlabelled Images](https://anushree-das.medium.com/finding-structure-in-unstructured-image-dataset-an-initial-analysis-of-unlabelled-data-0cf2f6231735)
 - [Your Image Dataset Is Ready. Now Which Model Do You Train?](https://anushree-das.medium.com/your-image-dataset-is-ready-now-which-model-do-you-train-b72d63367708)
+- [How to Build a Data Warehouse from 24 Million Credit Card Transactions](https://anushree-das.medium.com/how-to-build-a-data-warehouse-from-24-million-credit-card-transactions-3cb6e48a829a)
 
 ---
 
