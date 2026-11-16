@@ -1,72 +1,74 @@
 # Hi, I'm Anushree 👋
 
-**ML Engineer** building production systems at the intersection of research and engineering.
+**Machine Learning Engineer / Data Scientist** · I work on tabular, time-to-event, and sequence modelling for financial data, with a focus on evaluation that holds up outside the notebook (no leakage, out-of-time validation, models that are calibrated and tuned for a decision).
 
-I've worked across gaming, VR, aerospace, medical imaging, and cloud infrastructure — and found that machine learning is where all of it comes together. My work focuses on making ML systems that don't just perform well in notebooks, but hold up in production.
+🇪🇺 &nbsp;**Open to ML / Data Science roles in the Netherlands, Belgium and Luxembourg.**
 
-Currently at **Arkatechture** building financial data infrastructure, and pursuing an MS in Data Analytics at **McDaniel College**. Previously at **Amazon Web Services** (Computer Vision Data Platform) and **Quantil/CDNetworks**.
-
----
-
-## What I'm working on
-
-- 📄 &nbsp; ML research under review at **ACM PODS** — automated SQL data type inference for enterprise data pipelines
-- 🔍 &nbsp; Anomaly detection and time-series forecasting for data ingestion workflows
-- ✍️ &nbsp; Writing about production ML and the fundamentals that actually matter → [anushree-das.medium.com](https://anushree-das.medium.com/)
+- 🏦 &nbsp;**Now:** ML proofs of concept at **Arkatechture** for financial-services clients: arrival forecasting and next-best-product recommendation
+- 🎓 &nbsp;MS Data Analytics, **McDaniel College** (2026) · MS Computer Science, **RIT** (2021)
+- ☁️ &nbsp;Previously at **Amazon Web Services** (Computer Vision Data Platform) and **Quantil / CDNetworks**
+- 🔬 &nbsp;Research: **DTProfiler**, automated SQL column type inference for enterprise data pipelines
 
 ---
 
-## Selected projects
+## ⭐ Featured work: next-best-product prediction in retail banking
+
+Predicts which product a new bank customer will adopt next (loan, card, both, or neither) from only their **first 90 days** of transactions. Built on the Berka PKDD'99 dataset (1M+ transactions, 4,303 accounts).
+
+| | |
+|---|---|
+| **Problem framing** | Survival landmarking with competing risks and right-censoring, which removes the target leakage that full-history features introduce |
+| **Models compared** | ElasticNet, LightGBM, cause-specific Cox PH, Random Survival Forest, an RMTPP-style GRU temporal point process (PyTorch), and an ensemble |
+| **Validation** | Expanding-window temporal CV, held-out 1997 cohort, 1,000-sample bootstrap CIs |
+| **Result** | Random Survival Forest: **macro ROC-AUC 0.821**. A cost-sensitive decision rule raised **macro-F1 from 0.217 to 0.432** on a target that is 87% one class |
+
+📓 [Research notebook + 11-page paper](https://github.com/anushreedas/berka-next-best-product) &nbsp;·&nbsp; 🧱 [Modular, reproducible pipeline](https://github.com/anushreedas/banking-landmark-survival-rmtpp)
+
+---
+
+## Other selected projects
 
 | Project | What it does | Stack |
 |---|---|---|
-| [BERT Confusion Emotion Detection](https://github.com/anushreedas/BERT_LLM_Detect_Confusion_Emotion) | Fine-tuned BERT on time-series transcribed speech to detect multi-level human confusion across 12 model configurations, with sign test statistical significance validation | PyTorch, HuggingFace, BERT, TOD-BERT |
-| [Credit Card Transactions Data Warehouse](https://github.com/anushreedas/credit-card-transactions-datapipeline) | An ETL pipeline and dimensional data warehouse for credit card transaction analysis, built in R. This project transforms raw credit card data into a star schema optimized for fraud detection, customer behavior analysis, and business intelligence reporting | R, ETL, Schema Design |
-| [Dishwasher-Safe Image Classifier](https://github.com/anushreedas/dishwasher-safe-image-classifier) | Compared five CNN architectures on a custom 1,237-image dataset with class imbalance handling, frozen backbones, and per-class evaluation — best model (VGG16-BN) achieved 80% test accuracy, MCC 0.579 | PyTorch, ResNet, VGG16, AlexNet |
-| [Handwritten Math Expression Recognizer](https://github.com/anushreedas/Handwritten_Math_Expression_Recognition) | Multi-stage pipeline for stroke segmentation, symbol classification, and Symbol Layout Tree generation outputting LaTeX and MathML | SVM, Random Forest, Python |
-| [Content-Based Image Retrieval](https://github.com/anushreedas/Content_Based_Retrieval_System_Dog_Images) | Compared four feature extractors — color histogram, Gabor filter, HOG, and ResNet50 — for image similarity search across 133 dog breeds | PyTorch, OpenCV, scikit-learn |
-| [Foreground Mosaic with MOG2](https://github.com/anushreedas/Foreground_Mosaic_OpenCV) | Extracts moving foreground objects from video at distinct positions and composites them into a single mosaic using background subtraction and morphological processing | OpenCV, Python |
-| [Bird's Eye Transformation & Vehicle Counting](https://github.com/anushreedas/Birds_Eye_Transformation_And_Motion_Estimation) | Automatically detects lane boundaries with Hough lines, applies perspective warp to produce a top-down road view, and counts vehicles crossing a virtual line using MOG2 | OpenCV, Python |
-| [Parking Availability Prediction](https://github.com/anushreedas/Car_Detection) | Detects cars in ground-level parking lot photos using Faster R-CNN and feeds the count into a statistical model incorporating time of day, weather, and lot capacity to estimate spot availability | TensorFlow, Faster R-CNN, Python |
+| [BERT Confusion Detection](https://github.com/anushreedas/BERT_LLM_Detect_Confusion_Emotion) | Fine-tuned BERT / TOD-BERT on transcribed speech to detect multi-level confusion; 12 configurations compared with sign-test significance checks | PyTorch, Hugging Face |
+| [Credit Card Data Warehouse](https://github.com/anushreedas/credit-card-transactions-datapipeline) | ETL pipeline and star-schema warehouse for 24M credit card transactions, built for fraud and customer-behaviour analysis | R, SQL, dimensional modelling |
+| [Dishwasher-Safe Image Classifier](https://github.com/anushreedas/dishwasher-safe-image-classifier) | Five CNN architectures on a custom imbalanced dataset of 1,237 images; best (VGG16-BN) reached 80% test accuracy, MCC 0.579 | PyTorch, torchvision |
+| [Handwritten Math Recognition](https://github.com/anushreedas/Handwritten_Math_Expression_Recognition) | Stroke segmentation, symbol classification and layout-tree parsing to LaTeX / MathML | scikit-learn |
+| [Content-Based Image Retrieval](https://github.com/anushreedas/Content_Based_Retrieval_System_Dog_Images) | Colour histogram, Gabor, HOG and ResNet50 features compared for similarity search across 133 dog breeds | PyTorch, OpenCV |
+| [Parking Availability Prediction](https://github.com/anushreedas/Car_Detection) | Faster R-CNN car counts combined with time, weather and lot capacity to estimate free spots | TensorFlow |
+
+<details>
+<summary>Classical computer vision</summary>
+
+- [Foreground Mosaic with MOG2](https://github.com/anushreedas/Foreground_Mosaic_OpenCV): composites moving objects from video into one frame
+- [Bird's-Eye View & Vehicle Counting](https://github.com/anushreedas/Birds_Eye_Transformation_And_Motion_Estimation): Hough-line lane detection, perspective warp, vehicle counting
+
+</details>
 
 ---
 
-## Technical focus
+## Toolbox
 
 ```
-ML & AI          scikit-learn · PyTorch · TensorFlow · BERT/Transformers
-                 Random Forest · ensemble methods · computer vision · NLP
-                 feature engineering · causal inference
-
-Data Engineering ETL/ELT pipelines · Snowflake · AWS (S3, Lambda, Glue)
-                 PySpark · SQL · data quality monitoring · schema management
-
-MLOps            experiment tracking · model lifecycle · Docker · CI/CD
-                 production monitoring
+Modelling     scikit-learn · LightGBM · PyTorch · Hugging Face Transformers · TensorFlow
+              survival analysis (lifelines, scikit-survival) · time-series forecasting
+              imbalanced classification · calibration & threshold optimisation
+Data          Python · SQL · PySpark · pandas · R · Snowflake · ETL/ELT · data quality
+Production    Docker · CI/CD · AWS (S3, Lambda, Glue) · experiment tracking · monitoring
 ```
 
----
-
-## Background
-
-```
-MS Data Analytics         McDaniel College                    2026
-MS Computer Science       Rochester Institute of Technology   2021
-BS Information Technology University of Mumbai                2017
-```
-
-**AWS Certified Cloud Practitioner** (Dec 2024 – Dec 2027)
+**AWS Certified Cloud Practitioner** (valid to Dec 2027)
 
 ---
 
 ## Writing
 
-I write about what I'm actually building such as production ML systems, data pipelines, and why the fundamentals matter before chasing the hype.
+I write on [Medium](https://anushree-das.medium.com/) about the fundamentals that come before modelling.
 
-- [Before You Train Anything, Analyze This: EDA for Image Datasets with Pandas and Matplotlib](https://anushree-das.medium.com/image-dataset-analysis-using-python-libraries-pandas-and-matplotlib-a640e5f59805)
-- [Finding Structure in Unstructured Data: VGG16 + KMeans on Unlabelled Images](https://anushree-das.medium.com/finding-structure-in-unstructured-image-dataset-an-initial-analysis-of-unlabelled-data-0cf2f6231735)
-- [Your Image Dataset Is Ready. Now Which Model Do You Train?](https://anushree-das.medium.com/your-image-dataset-is-ready-now-which-model-do-you-train-b72d63367708)
 - [How to Build a Data Warehouse from 24 Million Credit Card Transactions](https://anushree-das.medium.com/how-to-build-a-data-warehouse-from-24-million-credit-card-transactions-3cb6e48a829a)
+- [Your Image Dataset Is Ready. Now Which Model Do You Train?](https://anushree-das.medium.com/your-image-dataset-is-ready-now-which-model-do-you-train-b72d63367708)
+- [Finding Structure in Unstructured Data: VGG16 + KMeans on Unlabelled Images](https://anushree-das.medium.com/finding-structure-in-unstructured-image-dataset-an-initial-analysis-of-unlabelled-data-0cf2f6231735)
+- [Before You Train Anything, Analyze This: EDA for Image Datasets](https://anushree-das.medium.com/image-dataset-analysis-using-python-libraries-pandas-and-matplotlib-a640e5f59805)
 
 ---
 
