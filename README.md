@@ -7,7 +7,21 @@
 - 🏦 &nbsp;**Now:** ML proofs of concept at **Arkatechture** for financial-services clients: arrival forecasting and next-best-product recommendation
 - 🎓 &nbsp;MS Data Analytics, **McDaniel College** (2026) · MS Computer Science, **RIT** (2021)
 - ☁️ &nbsp;Previously at **Amazon Web Services** (Computer Vision Data Platform) and **Quantil / CDNetworks**
-- 🔬 &nbsp;Research: **DTProfiler**, automated SQL column type inference for enterprise data pipelines
+- 🔬 &nbsp;Research: [**DTProfiler**](https://github.com/anushreedas/DTProfiler), ML-based SQL column type inference for automated data pipelines
+
+---
+
+## 🔬 Research: DTProfiler, SQL data type inference with ML
+
+Infers the SQL type of CSV columns (VARCHAR, NUMBER, BOOLEAN, TIME) from column statistics plus FastText embeddings of the column name. It catches cases where regex and pandas typing go wrong, such as IDs and ZIP codes whose leading zeros would be lost if cast to numbers.
+
+| | |
+|---|---|
+| **Models** | Decision tree, random forest, a modular neural network, and an RF + NN ensemble, compared with pandas dtype inference as the baseline |
+| **Evaluation** | Table-grouped and source-grouped splits so no test column shares a CSV (or a whole data source) with training · 5 splits × 3 seeds · variance decomposition, ablations, PCA sensitivity |
+| **Result** | RF + NN ensemble: **97.2% accuracy on unseen tables and 95.6% on unseen data sources**, vs. 88.7% and 90.3% for pandas, which never detects temporal types |
+
+📂 [Code, data splits and notebooks](https://github.com/anushreedas/DTProfiler)
 
 ---
 
@@ -22,7 +36,7 @@ Predicts which product a new bank customer will adopt next (loan, card, both, or
 | **Validation** | Expanding-window temporal CV, held-out 1997 cohort, 1,000-sample bootstrap CIs |
 | **Result** | Random Survival Forest: **macro ROC-AUC 0.821**. A cost-sensitive decision rule raised **macro-F1 from 0.217 to 0.432** on a target that is 87% one class |
 
-📓 [Research notebook + 11-page paper](https://github.com/anushreedas/berka-next-best-product) &nbsp;·&nbsp; 🧱 [Modular, reproducible pipeline](https://github.com/anushreedas/banking-landmark-survival-rmtpp)
+📓 [Research notebook + 11-page paper](https://github.com/anushreedas/berka-next-best-product) &nbsp;·&nbsp; 🧱 [Modular, reproducible pipeline](https://github.com/anushreedas/banking-landmark-survival-rmtpp) &nbsp;·&nbsp; ✍️ [Write-up on Medium](https://anushree-das.medium.com/continuous-time-next-best-product-recommendation-tabular-baselines-survival-analysis-and-rmtpp-353b55c76b14)
 
 ---
 
@@ -52,6 +66,7 @@ Predicts which product a new bank customer will adopt next (loan, card, both, or
 ```
 Modelling     scikit-learn · LightGBM · PyTorch · Hugging Face Transformers · TensorFlow
               survival analysis (lifelines, scikit-survival) · time-series forecasting
+              temporal point processes (Hawkes, Neural Hawkes, RMTPP) · FastText embeddings
               imbalanced classification · calibration & threshold optimisation
 Data          Python · SQL · PySpark · pandas · R · Snowflake · ETL/ELT · data quality
 Production    Docker · CI/CD · AWS (S3, Lambda, Glue) · experiment tracking · monitoring
@@ -63,8 +78,10 @@ Production    Docker · CI/CD · AWS (S3, Lambda, Glue) · experiment tracking �
 
 ## Writing
 
-I write on [Medium](https://anushree-das.medium.com/) about the fundamentals that come before modelling.
+I write on [Medium](https://anushree-das.medium.com/) about the modelling I do and the fundamentals that come before it.
 
+- 🆕 [Forecasting Data-Pipeline Arrivals with Poisson, Hawkes, Neural Hawkes and LogNormMix](https://anushree-das.medium.com/forecasting-data-pipeline-arrivals-with-poisson-hawkes-neural-hawkes-and-lognormmix-409561eb2f4f)
+- 🆕 [Continuous-Time Next-Best-Product Recommendation: Tabular Baselines, Survival Analysis, and RMTPP on the Berka Banking Dataset](https://anushree-das.medium.com/continuous-time-next-best-product-recommendation-tabular-baselines-survival-analysis-and-rmtpp-353b55c76b14)
 - [How to Build a Data Warehouse from 24 Million Credit Card Transactions](https://anushree-das.medium.com/how-to-build-a-data-warehouse-from-24-million-credit-card-transactions-3cb6e48a829a)
 - [Your Image Dataset Is Ready. Now Which Model Do You Train?](https://anushree-das.medium.com/your-image-dataset-is-ready-now-which-model-do-you-train-b72d63367708)
 - [Finding Structure in Unstructured Data: VGG16 + KMeans on Unlabelled Images](https://anushree-das.medium.com/finding-structure-in-unstructured-image-dataset-an-initial-analysis-of-unlabelled-data-0cf2f6231735)
