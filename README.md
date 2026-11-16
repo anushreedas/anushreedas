@@ -7,7 +7,23 @@
 - 🏦 &nbsp;**Now:** ML proofs of concept at **Arkatechture** for financial-services clients: arrival forecasting and next-best-product recommendation
 - 🎓 &nbsp;MS Data Analytics, **McDaniel College** (2026) · MS Computer Science, **RIT** (2021)
 - ☁️ &nbsp;Previously at **Amazon Web Services** (Computer Vision Data Platform) and **Quantil / CDNetworks**
+- ⏱️ &nbsp;Capstone: [**ArrivalCast**](https://github.com/anushreedas/ArrivalCast), probabilistic arrival forecasting with neural temporal point processes
 - 🔬 &nbsp;Research: [**DTProfiler**](https://github.com/anushreedas/DTProfiler), ML-based SQL column type inference for automated data pipelines
+
+---
+
+## ⏱️ ArrivalCast: when will the next file arrive?
+
+Probabilistic forecasts of the next arrival of recurring events, such as a daily vendor file, an hourly log drop, or a scheduled flight. Each forecast is a full predictive distribution: quantiles, prediction intervals, and the probability of arriving before an SLA deadline. That probability is updated while the event is late ("it's 10:30 and the 09:00 file is still missing"). This is the code for my MS capstone.
+
+| | |
+|---|---|
+| **Models** | Poisson, exponential Hawkes, Neural Hawkes (CT-LSTM), LogNormMix (intensity-free neural TPP), all scored through one shared NLL / CRPS / coverage pipeline |
+| **Evaluation** | Chronological splits with right-censoring · 21 synthetic sources plus a **held-out** check on 34 real BTS flight routes, with settings frozen and the CLI refusing to tune on held-out data |
+| **Result** | LogNormMix has the lowest NLL on 20 of 21 synthetic sources and 29 of 34 flights, and is the only model with near-calibrated 80% intervals. On real flights, median MAE is **2.95 h vs. 8.75 h for Poisson** |
+| **Engineering** | Installable package with a CLI and Python API, 51 tests with CI, Docker, resumable cached runs, and paper tables generated straight from result files |
+
+📂 [Code, CLI and paper](https://github.com/anushreedas/ArrivalCast) &nbsp;·&nbsp; ✍️ [Write-up on Medium](https://anushree-das.medium.com/forecasting-data-pipeline-arrivals-with-poisson-hawkes-neural-hawkes-and-lognormmix-409561eb2f4f)
 
 ---
 
@@ -25,7 +41,7 @@ Infers the SQL type of CSV columns (VARCHAR, NUMBER, BOOLEAN, TIME) from column 
 
 ---
 
-## ⭐ Featured work: next-best-product prediction in retail banking
+## 🏦 Next-best-product prediction in retail banking
 
 Predicts which product a new bank customer will adopt next (loan, card, both, or neither) from only their **first 90 days** of transactions. Built on the Berka PKDD'99 dataset (1M+ transactions, 4,303 accounts).
 
