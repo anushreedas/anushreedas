@@ -80,12 +80,13 @@ Predicts which product a new bank customer will adopt next (loan, card, both, or
 ## Toolbox
 
 ```
-Modelling     scikit-learn · LightGBM · PyTorch · Hugging Face Transformers · TensorFlow
+Modelling     PyTorch · scikit-learn · LightGBM · Hugging Face Transformers · TensorFlow
               survival analysis (lifelines, scikit-survival) · time-series forecasting
-              temporal point processes (Hawkes, Neural Hawkes, RMTPP) · FastText embeddings
+              temporal point processes (Hawkes, Neural Hawkes, RMTPP, LogNormMix) · FastText
               imbalanced classification · calibration & threshold optimisation
-Data          Python · SQL · PySpark · pandas · R · Snowflake · ETL/ELT · data quality
-Production    Docker · CI/CD · AWS (S3, Lambda, Glue) · experiment tracking · monitoring
+Evaluation    leakage-safe & grouped splits · out-of-time validation · bootstrap CIs · ablations
+Data          Python · SQL · R · pandas · Snowflake · ETL/ELT · data quality & drift monitoring
+Engineering   Docker · GitHub Actions CI · Git · AWS · Elasticsearch k-NN · Terraform
 ```
 
 **AWS Certified Cloud Practitioner** (valid to Dec 2027)
